@@ -1,0 +1,51 @@
+.container-devise-form {
+  min-width: 650px;
+  width: auto;
+  padding: 20px;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 0 auto;
+  margin-top: 90px;
+  text-align: center;
+  height: 100% !important;
+  background-color: #E6E6E6;
+  margin-bottom: 20px;
+}
+
+.container-devise-form h2{
+  color:#282727;
+  font-weight:bold;
+}
+
+.container-devise-form-wide {
+  width: 85%;
+  background-color: #0792B2;
+  padding: 20px;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+}
+
+.form-links {
+  margin-top: 20px;
+  padding-top: 20px;
+  color: #5A5C5C;
+  &:hover {
+    color: #0792B2;
+  }
+}
+
+.form-container {
+  height: auto;
+  min-height: 84vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input {
+    text-align: center;
+  }
+}
+
+.change-pass {
+  margin-top: 20px;
+}

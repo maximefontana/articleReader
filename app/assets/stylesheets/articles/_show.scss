@@ -1,0 +1,77 @@
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  margin-right: 15vw;
+  margin-left: 15vw;
+  background: #E6E6E6;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.back-button {
+  display: flex;
+
+  padding: 5px;
+  width: 400px;
+  height: 45px;
+}
+
+.button {
+  box-shadow: 0.1px 0.1px 3px #C6C7C4;
+  border-radius: 25px;
+  font-weight: bold;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+  padding: 2px;
+}
+
+.button-blue {
+  color: #0792B2 !important;
+  border: 2px solid #0792B2 !important;
+  width: 400px;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    color: white !important;
+    background-color: #0792B2;
+    text-decoration: none;
+  }
+  transition: 0.3s;
+}
+
+// Homepage
+
+.button-blue-home {
+  color: #0792B2 !important;
+  border: 2px solid #0792B2 !important;
+  width: 200px;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    color: white !important;
+    background-color: #0792B2;
+  }
+  transition: 0.3s;
+  margin-top: 9px;
+}
+
+.form-home {
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+  &:focus {
+    outline: none;
+  }
+}
+
+.home-container {
+  justify-content: center;
+  text-align: center;
+}
