@@ -1,33 +1,33 @@
-<div class="main-container home-container">
+<div class="main-container home-container col-md-10 col-md-offset-1">
 
   <div style="margin-left: 12px !important;">
     <h1>Articles</h1>
   </div>
 
-  <ul style="list-style-type: none;">
+  <div>
     <% @articles.each do |article| %>
       <% if article.user == current_user %>
-        <li>
+        <p>
           <%= link_to article.title, article_path(article) %> - <%= article.date %>
-        </li>
+        </p>
       <% end %>
     <% end %>
-  </ul>
+  </div>
 
   <h3>Enter article URL: </h3>
   <div class="form-home">
     <%= form_for Article.new do |f| %>
-      <%= f.text_field :url, style: 'width: 400px;', autocomplete: :off %>
+      <%= f.text_field :url, style: 'width: 350px;', autocomplete: :off %>
       <%= f.submit 'Clean up', class: 'button button-blue-home' %>
     <% end %>
   </div>
 
   <h3>Supported sites:</h3>
-  <ul>
+  <div>
     <p><%= link_to 'BBC News', 'https://www.bbc.com/news' %></p>
     <p>France24, <%= link_to 'FR', 'https://www.france24.com/fr/' %> | <%= link_to 'EN', 'https://www.france24.com/en/' %></p>
     <p><%= link_to 'Reuters', 'https://www.reuters.com/' %></p>
     <p><%= link_to 'WashingtonPost', 'https://www.washingtonpost.com/' %></p>
-  </ul>
+  </div>
 
 </div>

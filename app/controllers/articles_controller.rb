@@ -149,7 +149,7 @@ class ArticlesController < ApplicationController
     tags = article.xpath("//p")
     content = ""
 
-    stop = tags.length - 8
+    stop = tags.length - 9
     tags.each_with_index do |tag, index|
       if index < stop
         content += tag.text

@@ -1,15 +1,25 @@
-<div class="main-container">
-  <div>
-    <h2><%= link_to @article.url, @article.url %></h2>
+<div class="main-container col-md-10 col-md-offset-1">
+  <div class="hidden-xs">
+    <h3><%= link_to @article.url, @article.url %></h3>
+  </div>
+  <div class="hidden-md hidden-lg">
+    <h2><%= link_to 'Link', @article.url %></h2>
   </div>
   <div>
-    <h1><%= @article.title %></h1>
+    <div class="hidden-xs">
+      <h1><%= @article.title %></h1>
+    </div>
+    <div class="title-mobile hidden-md hidden-lg">
+      <h3><%= @article.title %></h3>
+    </div>
     <p><%= @article.date %></p>
   </div>
   <div>
     <p><%= simple_format(simple_format(@article.content)) %></p>
   </div>
   <div class="back-button">
-    <%= link_to 'Back', articles_path, class: 'button button-blue' %>
+    <!-- <div class="back-item"> -->
+      <%= link_to 'Back', articles_path, class: 'button button-blue' %>
+    <!-- </div> -->
   </div>
 </div>
