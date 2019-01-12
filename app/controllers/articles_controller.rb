@@ -142,6 +142,8 @@ class ArticlesController < ApplicationController
 
   def get_date_wapo(html_doc)
     date = html_doc.css("span[class='author-timestamp']").text
+    # sets the date to todays if there's a problem geting the date
+    date = Date.today.to_s if !date.contains("201")
   end
 
   def get_content_wapo(html_doc)
