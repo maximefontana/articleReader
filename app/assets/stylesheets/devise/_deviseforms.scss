@@ -1,9 +1,9 @@
 .container-devise-form {
-  min-width: 650px;
-  width: auto;
+  // min-width: 650px;
+  width: 100%;
   padding: 20px;
   border-radius: 10px;
-  padding: 30px;
+  // padding: 30px;
   margin: 0 auto;
   margin-top: 90px;
   text-align: center;
@@ -18,6 +18,7 @@
 }
 
 .container-devise-form-wide {
+
   width: 85%;
   background-color: #0792B2;
   padding: 20px;
@@ -35,12 +36,18 @@
   }
 }
 
+.form-inputs {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 .form-container {
   height: auto;
   min-height: 84vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 !important;
   input {
     text-align: center;
   }
